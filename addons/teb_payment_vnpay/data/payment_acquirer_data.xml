@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="payment_acquirer_myvnpay" model="payment.provider">
+        <field name="name">VN Pay</field>
+        <field name="vnpay_api_url">https://sandbox.vnpayment.vn/paymentv2/vpcpay.html</field>
+        <field name="vnpay_acquirer_exid">vnpay</field>
+        <field name="image_128" type="base64" file="teb_payment_vnpay/static/src/img/icon.png"/>
+        <field name="code">vnpay</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_transaction_form_vnpay" model="ir.ui.view">
+        <field name="name">VNPay Transaction Form</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.payment_transaction_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='provider_reference']" position="after">
+                <field name="bank_tran_no" string="Bank Transaction Number"/>
+                <field name="bank_code" string="Bank Code"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

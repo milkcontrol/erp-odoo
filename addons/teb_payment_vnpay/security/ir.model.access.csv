@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_payment_vnpay_payment_vnpay,payment_vnpay.payment_vnpay,model_payment_vnpay_payment_vnpay,,1,0,0,0

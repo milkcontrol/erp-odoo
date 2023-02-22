@@ -1,0 +1,21 @@
+<odoo>
+    <template id="redirect_form">
+        <!-- <script src="/payment_vnpay/static/src/js/main.js"></script> -->
+       <form t-att-action="vnpay_api_url" method="post">
+            <input type="hidden" id='vnp_Amount' name='vnp_Amount' t-att-value="vnp_Amount"/>
+            <input type="hidden" id='vnp_Command' name='vnp_Command' t-att-value="vnp_Command"/>
+            <input type="hidden" id='vnp_CreateDate' name='vnp_CreateDate' t-att-value="vnp_CreateDate"/>
+            <input type="hidden" id='vnp_CurrCode' name='vnp_CurrCode' t-att-value="vnp_CurrCode"/>
+            <input type="hidden" id='vnp_IpAddr' name='vnp_IpAddr' t-att-value="vnp_IpAddr"/>
+            <input type="hidden" id='vnp_Locale' name='vnp_Locale' t-att-value="vnp_Locale"/>
+            <input type="hidden" id='vnp_OrderInfo' name='vnp_OrderInfo' t-att-value="vnp_OrderInfo"/>
+            <input type="hidden" id='vnp_OrderType' name='vnp_OrderType' t-att-value="vnp_OrderType"/>
+            <input type="hidden" id='vnp_ReturnUrl' name='vnp_ReturnUrl' t-att-value="vnp_ReturnUrl"/>
+            <input type="hidden" id='vnp_TmnCode' name='vnp_TmnCode' t-att-value="vnp_TmnCode"/>
+            <input type="hidden" id='vnp_TxnRef' name='vnp_TxnRef' t-att-value="vnp_TxnRef"/>
+            <input type="hidden" id='vnp_Version' name='vnp_Version' t-att-value="vnp_Version"/>
+            <!-- <input type="hidden" id='vnp_SecureHashType' name='vnp_SecureHashType' t-att-value="vnp_SecureHashType"/> -->
+            <input type="hidden" id='vnp_SecureHash' name='vnp_SecureHash' t-att-value="vnp_SecureHash"/>
+       </form>
+    </template>
+</odoo>
